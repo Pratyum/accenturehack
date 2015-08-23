@@ -1,0 +1,112 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Admin"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Employee"
+        android:id="@+id/button_addNew"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/imageButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Trip"
+        android:id="@+id/button_removeTrip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/scrollView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_search"
+        android:hint="Search by employee name"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:layout_alignEnd="@+id/textView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignTop="@+id/editText_search"
+        android:layout_alignBottom="@+id/editText_search"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/editText_search"
+        android:src="@drawable/search_24"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_below="@+id/editText_search"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button_addNew"
+        android:layout_alignParentEnd="true" >
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+        android:id="@+id/textView_Sno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sno"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+        android:id="@+id/textView_EmpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Name"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+        android:id="@+id/textView_TrpSrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+        android:id="@+id/textView_TrpEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+        android:id="@+id/textView_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Journey"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+        android:id="@+id/textView_Days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+    </HorizontalScrollView>
+
+    < android:layout_width android:layout_width="match_parent" />="match_parent" />
+
+</RelativeLayout>
+
